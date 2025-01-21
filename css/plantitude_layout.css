@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/*
+	Final project for Comp 2681 
+    
+    CSS layout page for Plantitude 
+    Author: Dylan Phillips 
+    Date: Dec 18, 2023  
+
+    Filename: plantitude_layout.css
+*/
+
+*::before, 
+*::after { 
+	box-sizing: border-box;
+}
+
+/* Max-height, max-width, and margins */
+html {
+	height: 100%;
+	max-width: 1460px; 
+	min-width: 459px; 
+	font-size: 12px; 
+	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	position: relative;  	
+}
+
+/* Grid Layout Design for home page */
+.header-container { 
+	grid-area: header;
+}
+
+.video-container { 
+	grid-area: video;
+	overflow: hidden;
+	background-color: black;
+}
+
+.food-container { 
+	grid-area: food;
+	background-color: black; 
+}
+
+.reserve-container { 
+	grid-area: reserve;
+	background-color: white;
+	background-image: url("../images/background_image.jpeg");
+	background-size: cover; 
+}
+
+.wedding-container { 
+	grid-area: wedding; 
+	background-color: white;
+	background-image: url("../images/background_image.jpeg");
+	background-size: cover;
+}
+
+.location-container { 
+	grid-area: location;
+	background-color: black;
+}
+
+.footer-container { 
+	grid-area: footer; 
+	background-color: whtie;
+}
+
+.index-grid-container { 
+	margin: 0 auto;
+	display: grid; 
+	display: inline-grid; 
+	grid-column-gap: 0px; 
+	grid-template-columns: 200px 2fr 2fr 200px;
+	grid-template-rows: 330px 720px 900px 500px 400px 100px; 
+	grid-template-areas: 
+	'header header header header'
+	'video video video video'
+	'food food food food'
+	'reserve reserve wedding wedding'
+	'location location location location'
+	'footer footer footer footer';
+	
+}
+
+body { 
+	max-height: 100%;
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.6em; 
+	font-family: arial, sans-serif;; 		
+}
+
+/* Logo design for nav menu */
+#logo {
+  width:400px;
+  margin:auto;
+  padding-left:430px;
+}
+
+.header {
+	background-color:black;	
+}
+
+/* Menu Brunch page format using float */
+.menu1 { 
+	float: left;
+	display: inline; 
+}
+
+.menu2 {
+	float: right;
+	display:inline; 
+}
+
+/* Menu Dinner page format using float */
+.menu1_dinner { 
+	float: left;
+	display: inline;
+}
+
+.menu2_dinner { 
+	float: right; 
+	display: inline; 
+}
+
+/* Flex box layout for Reserve page */
+.wrapper { 
+	display: flex; 
+	flex-wrap: wrap; 
+}
+
+.flex_header { 
+	flex: 1 3 100%; 
+}
+
+.reserve_page_heading { 
+	flex: 1 3 100%; 
+}
+
+.reserve_page_img { 
+	flex: 1 3 20%; 
+}
+
+/* Reservation form format */
+#c_reserve { 
+	display: flex; 
+	flex-flow: row wrap;
+	
+}
+
+#c_reserve > #reserve_info { 
+	flex: 1 1 100%;
+	   
+}
+
+.reserve_cust { 
+	display: flex; 
+	flex-flow: row wrap;
+	margin: 7px 0px; 	
+}
+
+.reserve_cust > * { 
+	flex: 1 1 150px; 	
+} 
+
+/* Wedding format */ 
+
+.wedding_heading { 
+	position: relative;
+	 
+}
+
+.wedding_quote { 
+	position: relative; 
+}
+
+.wedding_page_image_container { 
+	position: relative; 
+}
+
+#c_wedding { 
+	display: flex; 
+	flex-flow: row wrap;
+}
+
+ #c_wedding > #wedding_info { 
+	flex: 1 1 78%;
+}
+
+.wedding_cust > * { 
+	flex: 1 1 100px; 	
+}
+
+.wedding_cust { 
+	display: flex; 
+	flex-flow: row wrap;
+	margin: 7px 0px;	
+}
+
+/* Contact Us formating */ 
+
+.flex_contact_heading { 
+	flex: 1 3 100%; 
+}
+
+.flex_contact_info { 
+	flex: 1 3 100%; 
+}
+
+.flex_contact_experience { 
+	flex: 1 3 100%; 
+	color: white; 
+}
+
+.contact_name { 
+	flex: 1 3 100%; 
+}
+
+.contact_email { 
+	flex: 1 3 100%; 
+}
+
+.contact_info { 
+	flex: 1 3 100%; 
+}
+
+/* Location format */ 
+.location_heading { 
+	flex: 1 3 100%; 
+}
+
+.location_page_images { 
+	flex: 1 3 70%; 
+}
+
+.table_container { 
+	flex: 1 3 25%; 
+}
+
+.location_map { 
+	flex: 1 3 70%; 
+}
+
+.location_map_info { 
+	flex: 1 3 30%;
+	margin-top: 80px;  
+}
+
+.location_footer { 
+	flex: 1 3 100%; 
+	text-align: center;
+}
+
+/* Join the team format */ 
+
+.team_heading { 
+	flex: 1 3 100%; 
+}
+
+.team_imgages { 
+	flex: 1 3 100%; 
+}
+
+.team_quote { 
+	flex: 1 3 100% 
+}
+
+.team_why { 
+	flex: 1 3 100%; 
+}
+
+.jointeam_footer { 
+	flex: 1 3 100%; 
+	margin: 0 auto; 
+}
+
+

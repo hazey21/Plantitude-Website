@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html lang = "en">
+
+	<head>
+		<!--
+   			Final project for Comp 2681 
+    
+    		Contact Page for Plantitude 
+   			Author: Dylan Phillips 
+    		Date: Dec 18, 2023  
+
+    		Filename: pl_contact.html
+   		-->
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale= 1.0">
+		<meta name = "keywords" content = "Plant Based, Vegan, Ladysmith, Food, Restaurant, Wedding Catering"/>
+		<title>Plantitude Contact</title>
+
+		<link href = "../css/plantitude_layout.css" rel = "stylesheet"/>
+		<link href = "../css/plantitude_base.css" rel = "stylesheet"/>
+		<script src = "../javascript/plantitude.js"></script>
+	</head>
+
+	<body>
+		<div class = "wrapper">
+			<div class = "flex_header">
+				<header class = "header">
+					<a href = "../html/index.html">
+						<img id = "logo" src = "../images/plantitude_logo copy.png" alt = "Plantitude Logo"/>
+					</a>
+					<nav class = "navbar">
+						<ul class = "nav-links">
+							<li><a href = "../html/index.html">Home</a></li>
+							<li class = "dropdown">
+								<button class = "dropbtn">Menu's</button>
+								<div class = "dropdown-content">
+								  <a href = "../html/pl_menu.html">Brunch Menu</a>
+								  <a href = "../html/pl_menu_dinner.html">Dinner Menu</a>
+								</div>
+								<li class = "dropdown_navicon">
+									<button class = "dropbtn_navicon">
+										<img src = "../images/navicon.png" alt = "Menu" class = "navicon">
+									</button>
+									<div class = "dropdown-content_navicon">
+										<a href = "../html/index.html">Home</a>
+										<a href = "../html/pl_menu.html">Brunch Menu</a>
+										<a href = "../html/pl_menu_dinner.html">Dinner Menu</a>
+										<a href = "../html/pl_res_takeout.html">Reservation/Takeout</a>
+										<a href = "../html/pl_wedcat.html">Wedding Catering</a>
+										<a href = "../html/pl_contact.html">Contact</a>
+										<a href = "../html/pl_location.html">Location</a>
+										<a href = "../html/pl_jointeam.html">Join The Team</a>
+									</div>
+								</li>
+							</li>
+							<li><a href = "../html/pl_res_takeout.html">Reservation/Takeout</a></li>
+							<li><a href = "../html/pl_wedcat.html">Wedding Catering</a></li>
+							<li><a href = "../html/pl_contact.html">Contact</a></li>
+							<li><a href = "../html/pl_location.html">Location</a></li>
+							<li><a href = "../html/pl_jointeam.html">Join The Team</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+			
+			<div class = "flex_contact_heading">
+				<h1>Contact Us</h1>
+			</div>
+			<div class = "contact_textbox">
+				<div class = "flex_contact_info">
+					<h2>Your Feedback is Important to Us</h2>
+					<article id = "contact_subheading">Please leave a comment of your experience with us below.</article>
+					<article id = "contact_subheading">All form fields marked with an * are required.</article>
+				</div>
+		
+				<div class = "flex_contact_experience">
+					<label for = "experience">What kind of experience did you have? *</label>
+					<select name = "experience" id = "experience" required> 
+						<option value = "dine_in">Dine In</option>
+						<option value = "takeout">Takeout</option>
+					</select>
+				</div>
+				<div class = "contact_name"> 
+					<label for = "contact_first_last">First Name and Last Name *</label>
+					<input name = "contact_first_last" id = "contact_first_last" type = "text" placeholder = "First Name and Last Name" required> 
+				</div>
+
+				<div class = "contact_email"> 
+					<label for = "contact_email_box">E-Mail *</label>
+					<input name = "contact_email_box" id = "contact_email_box" type = "text" placeholder = "bob@gmail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" required/>
+				</div>
+			</div>
+
+			<div class = "contact_info"></div>
+				<label for = "comments" id = "comments">Comments or Special Requests</label>
+				<textarea name = "cust_comments" id = "comments">
+				</textarea>
+
+				<div class = "contact_buttons"> 
+					<input value = "Submit Feedback" id = "contact_feedback" type = "submit"/>
+				</div>
+			</div>
+		</div>
+
+
+		<footer>
+			<div class="footer_content">
+				<div class="footer_info">
+					<h4>Plantitude</h4>
+					<p>431 1st Ave, Ladysmith, BC &#128309; V9G 1A1
+					Phone: 250-924-1201 &#9742;</p>
+				</div>
+				<div class="footer_nav">
+					<a href="../html/pl_menu.html">Menu</a></li>
+					<a href="../html/pl_res_takeout.html">Reservation/Takeout</a></li>
+					<a href="../html/pl_wedcat.html">Wedding Catering</a></li>
+					<a href="../html/pl_contact.html">Contact</a></li>
+					<a href="../html/pl_location.html">Location</a></li>
+					<a href="../html/pl_jointeam.html">Join The Team</a></li>
+					
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<p>&copy; 2023 Plantitude. All rights reserved.</p>
+			</div>
+		</footer>
+
+	</body>
+</html>
+
+

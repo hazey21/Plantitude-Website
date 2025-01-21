@@ -1,0 +1,1746 @@
+@charset "utf-8"; 
+
+/*
+	Final project for Comp 2681 
+    
+    CSS base page for Plantitude 
+    Author: Dylan Phillips 
+    Date: Dec 18, 2023  
+
+    Filename: plantitude_base.css
+*/
+
+/* Plantitude Menu design */
+
+/* Menu Brunch page */
+.menu_brunch_heading { 
+	text-align: center;
+	font-size: large;
+	margin-top: 5%;
+}
+
+.menu1::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu1_soups::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu1_comfort::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu2::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu2_bowls::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu2_add::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu1_dinner::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu2_dinner::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu_dinner_burgers::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu_features::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu_pasta::first-letter { 
+	float: left;
+	line-height: 25px;
+	font-size: 45px;
+	font-family: Montserrat;
+	color: green;
+	margin-bottom: -20px;
+}
+
+.menu1 { 
+	width: 45%; 
+	height: 950px;
+	text-align: justify;
+	margin-left: 20px;
+}
+
+.menu1_prices  {
+	float: right; 
+	margin-left: 10px; 
+	margin: 0 auto; 
+}
+
+.menu1_info { 
+	border: 2px solid hsl(107, 70%, 45%);
+	padding-left: 10px; 
+	padding-right: 10px; 
+	box-shadow: hsl(107, 70%, 45%) 0px 1px 1px;
+	text-align: center;
+	margin-top: 100px; 
+}
+
+.menu2_bread { 
+	float:right; 
+	text-align: center;
+	margin-right: 10px; 
+	transform: rotate(1deg);
+}
+
+.menu2 {
+	text-align: justify; 
+	width: 45%; 
+	height: 950px;
+	margin-right: 20px; 
+}
+
+.menu2_info { 
+	border: 2px solid hsl(107, 70%, 45%);
+	padding-left: 10px; 
+	padding-right: 10px;
+	margin-bottom: 40px; 
+	box-shadow: hsl(107, 70%, 45%) 0px 1px 1px;
+}
+
+/* Menu Dinner page */ 
+.menu_dinner_heading { 
+	text-align: center;
+	margin-top: 5%;
+}
+
+.menu_dinner_heading:first-of-type { 
+	font-size: large;
+}
+.menu1_dinner { 
+	width: 45%; 
+	height: 950px;
+	text-align: justify;
+	margin-left: 20px;
+}
+
+.menu2_dinner { 
+	width: 45%; 
+	height: 950px;
+	text-align: justify;
+	margin-right: 20px;
+}
+
+.menu2_dinner_info { 
+	border: 2px solid hsl(107, 70%, 45%);
+	padding-left: 10px; 
+	padding-right: 10px;
+	box-shadow: hsl(107, 70%, 45%) 0px 1px 1px;
+	margin-top: 100px;
+}
+
+/* Nav  menu */ 	
+.navbar ul { 
+	overflow: hidden; 
+	list-style-type: none;
+	padding-top: 50px;
+	padding-left: 175px; 
+	padding-bottom: 92px;
+	margin: 0px; 	
+}
+
+
+/* Dropdown container */
+.dropdown_navicon{
+    position: absolute;
+    display: inline-block;
+	margin-left: 100px;
+	display: none;  
+}
+
+/* Navicon */
+.navicon {
+    display: none; /* Hide navicon by default */
+    width: 30px;
+    height: auto;
+
+}
+
+.dropdown-content_navicon {
+    display: none;
+    position: relative;
+    background-color: black; 
+    color: white; 
+    width: 190px; 
+    text-align: center; 
+    top: calc(100% + 10px); 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.dropdown-content_navicon a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content_navicon a:hover {
+	background-color:  hsl(0,0%,10%);
+}
+
+.dropdown_navicon:hover .dropdown-content_navicon,
+.dropdown-content_navicon:hover {
+    display: block;
+}
+
+.navbar a { 
+	color: white; 
+	text-decoration: none; 
+	padding: 14px 16px; 
+	display: block;
+	text-align: center;   
+	font-size: 17px; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* DropDown Menu */
+.dropbtn {
+	background-color: black;
+	color: white;
+	padding-left: 16px;
+	padding-right: 16px; 
+	padding-top: 13px;
+	padding-bottom: 16px;
+	font-size: 17px;
+	border: none;
+	text-align: center;
+}
+  
+.dropdown {
+	position: relative;
+	float: left;
+}
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+.dropdown-content a:hover {
+	background-color:  hsl(0,0%,10%);
+	
+}
+  
+.dropdown:hover .dropdown-content {
+	display: block;
+	font-size: 18px; 
+}
+  
+.dropdown:hover .dropbtn {
+	background-color:  hsl(0,0%,10%);
+	font-size: 18px; 
+}
+
+.navbar a:hover { 
+	background-color: hsla(0,0%,10%,100);
+	font-size: 18px; 
+}
+
+.navbar li { 
+	float: left; 	
+}
+
+video { 
+	display: grid;
+	min-height: 6rem; 
+	width: 1280px; 
+	height: 720px; 
+}
+
+
+/* images home page */
+
+.countdown { 
+	color: red; 
+	text-align: center;
+	margin-top: 40px; 
+	margin-bottom: 40px;
+	font-size: larger;
+	text-decoration: underline;
+}
+.image_container {
+	position: relative;
+	margin-left: 130px; 
+	margin-bottom: 0px;
+	margin-right: 0px; 
+	padding: 0px; 
+	line-height: 0;  
+	vertical-align: baseline;
+	font-size: 0;
+}
+
+#img_food1 { 
+	width: 500px; 
+	height: 300px; 
+}
+
+#img_food2 { 
+	width: 500px; 
+	height: 300px; 
+}
+
+#img_food3 { 
+	width: 500px; 
+	height: 300px; 
+}
+
+#img_food4 { 
+	width: 500px; 
+	height: 300px; 
+}
+.menu_homepage_link { 
+	margin-bottom: 50px; 
+	margin-top: 40px;
+	text-align: center; 
+	font-size: 20px; 
+	color:white; 
+}
+
+a.menu_homepage_link:link { 
+	color: white;  
+}
+
+a.menu_hp_link:visited { 
+	color: purple; 
+}
+
+/* Rerserve part of home page */
+#img_reserve { 
+	margin-top: 50px; 
+	margin-left: 10px;
+	height: 300px; 
+	width: 500px; 
+	
+}
+
+.image_reserve { 
+	color: white; 
+	font-size: large;
+}
+
+[title = "reserve"] { 
+	color: whtie; 
+}
+
+/* Wedding Catering of home page */
+.image_wedding { 
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+}
+#img_wedding1 { 
+	margin-top: 50px; 
+	height: 370px; 
+	width: 350px; 
+}
+
+.wedding_hp_text { 
+	font-size: 18px;
+	padding-left: 15px; 
+	color: white;	 
+}
+
+[title = "wedding"] { 
+	color: black; 
+}
+
+
+
+/* Location of home page */
+.location_images { 
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+}
+
+#img_location1 { 
+	height: 400px; 
+	width: 500px; 
+}
+
+#img_location2 { 
+	height: 400px; 
+	width: 500px; 
+}
+
+.location_hp_text { 
+	padding-left: 10px; 
+	color: white; 
+	font-size: large;
+}
+
+a.location_hp_link:active { 
+	color: black; 
+}
+
+a.location_hp_link:visited { 
+	color: purple; 
+}
+
+.location_map_info { 
+	text-shadow: 2px 1px 1px rgb(222, 226, 234);
+}
+
+/* Footer */ 
+
+.footer_content {
+	font-size: 10px; 
+	text-align: center;
+}
+
+.footer_nav a { 
+	color: black; 
+	border-spacing: 6px;
+}
+
+.footer_nav a:visited { 
+	color: purple; 
+}
+
+.footer_bottom { 
+	font-size:10px;  
+	text-align: center;
+}
+/* Reserve page / order form */ 
+.reserve_page_heading { 
+	text-align: center;	
+	margin-top: 5%;
+	font-size: large;
+}
+
+#reserve_page_subheading { 
+	text-align: center;
+	margin-bottom: 5%;
+	font-size: large;
+}
+
+#rp_image1 { 
+	margin-left: 150px; 
+}
+
+
+.reserve_form { 
+	margin: 0 auto; 
+	margin-top: 40px;
+	color:white;
+}
+
+legend { 
+	text-align: center;
+	color: black; 
+}
+
+#c_reserve > #reserve_info { 
+	background-color: rgb(59, 89, 63);
+	background-clip:initial;
+	background-size: auto;
+	border-radius: 20px;
+	font-size: 14px; 
+	padding: 10px; 
+	margin-bottom: 40px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;	
+}
+
+textarea { 
+	margin-top: 10px; 
+    height: 100px; 
+    width: 95%; 
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #f8f8f8; 
+    resize: none; 
+    cursor: pointer; 
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.reserve_buttons { 
+	width: 100%; 
+	background-image: none;
+}
+
+input[type = submit], input[type = reset] { 
+    font-size: 1.2em; 
+    font-weight: medium;
+    border: 1px solid black;
+    padding: 15px; 
+    margin: 15px; 
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+input[type=submit] { 
+    background-color: rgb(10, 10, 10); 
+	animation: 2s linear grow;
+	color: white;
+}
+
+@keyframes grow {
+	from {
+	  width: 0%;
+	  height: 0%;
+	}
+  
+	to {
+	  width: 10%;
+	  height: 10%;
+	}
+  }
+
+input[type = submit]:hover { 
+	background-color: rgb(152, 218, 152); 
+}
+
+input[type=reset] { 
+    background-color: #7a7979;
+}
+
+input[type = reset]:hover { 
+	background-color: rgb(255, 232, 233);
+	transition: background-color ease 3s;
+}
+
+#comments { 
+    font-size: 18px;
+	margin: 10px; 
+	color: black; 
+}
+
+input[type=text] { 
+    border: 2px solid rgb(100, 100, 100); 
+    border-radius: 4px;
+    cursor: pointer; 
+	line-height: 30px;
+}
+
+/* Focusing on contact information */
+input[type=text]:focus { 
+    border: 3px solid rgb(100 100 100); 
+    border-radius: 6px; 
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+/* Wedding  page / order form */ 
+.wedding_heading { 
+	text-align: center;
+	margin-top: 5%;
+	font-size: large;
+	 
+}
+
+.wedding_quote { 
+	text-align: center;
+	font-size: large;
+	margin-bottom: 5%;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.wedding_form { 
+	margin: 0 auto;
+	width: 800px;  
+	color: white;
+}
+
+#c_wedding > #wedding_info { 
+	background-color: rgba(59, 89, 63, 100);
+	background-origin: initial;
+	border-radius: 20px;
+	border-style: groove;
+	font-size: 14px; 
+	padding: 10px; 
+	margin-bottom: 40px;
+	margin-top: 40px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* Contact us Page */ 
+
+.contact_textbox { 
+	border: 3px solid rgb(59, 89, 63); 
+	background-color: rgb(59, 89, 63);
+	margin: 0 auto; 
+	padding: 50px; 
+}
+.flex_contact_heading { 
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: large;
+}
+
+.flex_contact_info { 
+	text-align: center;
+	line-height: 40px;
+	font-size: large;
+}
+
+#contact_subheading { 
+	text-decoration: underline;
+}
+
+.flex_contact_experience { 
+	text-align: center;
+	margin-top: 40px; 
+	font-size: large;
+}
+
+
+select { 
+    width: 100px; 
+	text-align-last: center;
+    padding: 16px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    background-color: #f0f0f0; 
+    cursor: pointer;
+	margin-left: 60px;
+}
+
+.contact_name { 
+	text-align: center;
+	margin-top: 40px;
+	font-size: large;
+	color: white; 
+
+}
+
+#contact_first_last { 
+	width: 200px;
+	margin-left: 45px;
+}
+
+.contact_email { 
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: large;
+	color: white; 
+
+}
+
+#contact_email_box { 
+	width: 300px;
+	margin-left: 105px;
+}
+
+#contact_feedback { 
+	text-align: center;
+}
+
+/* Location Page */ 
+.location_heading { 
+	margin-top: 5%;
+	text-align: center;
+	font-size: large;
+}
+
+.location_page_images { 
+	margin-top: 5%;  
+}
+
+#location_img1 { 
+	margin-right: 1%; 
+}
+
+.table_container {
+    width: 300px;
+    margin-right: 20px; 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 5%; 
+}
+
+/* Table styles */
+.location_table {
+    width: 100%;
+    border-collapse: collapse;
+	font-family: arial, sans-serif;
+}
+
+.location_table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location_table th, .location_table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.location_table th {
+    background-color: #f2f2f2;
+}
+
+.location_table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Join the team page */ 
+
+.team_heading { 
+	text-align: center;
+	margin-bottom: 5%; 
+	margin-top: 5%; ;
+	font-size: large;
+}
+
+.team_quote { 
+	text-align: center;
+	margin-top: 40px; 
+	font-size: large;
+	margin-left: 200px; 
+	margin-right: 200px; 	
+}
+
+audio { 
+	border: 10px solid black; 
+	border-radius: 50px;
+}
+
+#team_img1 + #team_img2 + #team_img3 { 
+	opacity: 0.9; 
+}
+
+#team_img1 { 
+	opacity: 0.9; 
+}
+
+#team_img2 { 
+	opacity: 0.9; 
+}
+
+#prep_cooks { 
+	color: white; 
+}
+
+.team_why { 
+	text-align: center;
+	margin-top: 40px; 
+	border: 3px solid rgb(59, 89, 63);
+	background-color: rgb(59, 89, 63);
+}
+
+.team_why:last-of-type { 
+	color: black; 
+}
+
+#team_why_p { 
+	font-size: large;
+	margin-left: 200px; 
+	margin-right: 200px; 
+}
+
+/* PDF format */ 
+
+.pdf { 
+	margin-left: 50px; 
+}
+
+
+/* media displays for various sizes */ 
+@media screen and (max-width: 1700px){ 
+
+    
+}
+
+@media screen and (max-width: 1300px) { 
+	#wedding_page_img1 { 
+		height: 300px; 
+		width: 424px; 
+	}
+
+	#wedding_page_img2{ 
+		height: 300px; 
+		width: 424px; 
+	}
+
+	#wedding_page_img3 { 
+		height: 300px; 
+		width: 424px; 
+	}
+
+	#team_img1 { 
+		height:400px; 
+		width: 450px;
+		margin-left: 50px; 
+
+	}
+
+	#team_img2 { 
+		height: 400px; 
+		width: 450px; 
+	}
+
+	#team_img3 { 
+		height: 400px; 
+		width: 260px; 
+	}
+}
+
+@media screen and (max-width: 1250px){ 
+	
+	#wedding_page_img1 { 
+		height: 300px; 
+		width: 370px; 
+	}
+
+	#wedding_page_img2{ 
+		height: 300px; 
+		width: 370px; 
+	}
+
+	#wedding_page_img3 { 
+		height: 300px; 
+		width: 370px; 
+	}
+
+	
+}
+
+@media screen and (max-width: 1200px){ 
+    #img_food1 { 
+		width: 420px; 
+		height: 250px; 
+    }
+   
+    #img_food2 { 
+		width: 420px; 
+		height: 250px; 
+	}
+	
+	#img_food3 { 
+		width: 420px; 
+		height: 250px; 
+    }
+   
+	#img_food4 { 
+		width: 420px; 
+		height: 250px; 
+	}	
+	
+	.navbar ul { 
+		overflow: hidden; 
+		list-style-type: none;
+		padding-top: 50px;
+		padding-left: 100px; 
+		padding-bottom: 92px;
+		margin: 0px; 	
+	}
+
+	video {  
+		width: 1280px; 
+		height: 720px; 
+	}
+
+	.index-grid-container { 
+		grid-template-rows: 330px 690px
+	}
+
+	#rp_image1 { 
+		height: 350px; 
+		width: 400px;  
+	}
+
+	#rp_image2 { 
+		height: 350px; 
+		width: 400px;  
+	}
+
+	#wedding_page_img1 { 
+		height: 300px; 
+		width: 330px; 
+	}
+
+	#wedding_page_img2{ 
+		height: 300px; 
+		width: 330px; 
+	}
+
+	#wedding_page_img3 { 
+		height: 300px; 
+		width: 330px; 
+	}
+
+	#location_img1 { 
+		height: 400px; 
+		width: 500px; 
+		margin-left: 150px; 
+	}
+
+	#location_img2 { 
+		height: 400px; 
+		width: 300px; 
+	}
+
+	.table_container { 
+		margin-left: 0 auto; 
+		margin-bottom: 40px; ;
+	}
+
+	.location_page_images { 
+		flex: 1 3 100%; 
+	}
+	
+	.table_container { 
+		flex: 1 3 100%; 
+		text-align: center;
+		margin-right: 0px;
+			
+	}
+
+
+	.location_table { 
+		width: 700px; 
+		margin: 0 auto; 
+	}
+
+	iframe { 
+		margin-top: 40px;
+	}
+
+	#team_img1 { 
+		height:400px; 
+		width: 420px;
+		margin-left: 20px; 
+
+	}
+
+	#team_img2 { 
+		height: 400px; 
+		width: 420px; 
+	}
+
+	#team_img3 { 
+		height: 400px; 
+		width: 240px; 
+	}
+	
+
+}
+
+@media screen and (max-width: 1100px){ 
+	#img_wedding1 { 
+		margin-top: 50px; 
+		height: 340px; 
+		width: 320px; 
+	}
+
+	#img_reserve { 
+		margin-top: 50px; 
+		margin-left: 10px;
+		height: 270px; 
+		width: 420px; 
+		
+	}
+
+	#img_location1 { 
+		height: 400px; 
+		width: 450px; 
+	}
+	
+	#img_location2 { 
+		height: 400px; 
+		width: 450px; 
+	}
+
+	iframe { 
+		width: 700px; 
+	}
+
+	#location_img1 { 
+		margin-left: 100px;
+	}
+
+	#team_img1 { 
+		height:400px; 
+		width: 400px;
+		margin-left: 20px; 
+
+	}
+
+	#team_img2 { 
+		height: 400px; 
+		width: 400px; 
+	}
+
+	#team_img3 { 
+		height: 400px; 
+		width: 210px; 
+	}
+	
+}
+
+@media screen and (max-width: 1000px){ 
+	#img_food1 { 
+		width: 350px; 
+		height: 200px; 
+    }
+   
+    #img_food2 { 
+		width: 350px; 
+		height: 200px; 
+	}
+	
+	#img_food3 { 
+		width: 350px; 
+		height: 200px; 
+    }
+    #img_food4 { 
+		width: 350px; 
+		height: 200px; 
+	}
+	
+	#logo {
+		width:400px;
+		margin:auto;
+		padding-left:275px;
+	}	
+
+	video {  
+		width: 1280px; 
+		height: 720px; 
+	}
+
+	.index-grid-container { 
+		grid-template-rows: 330px 650px
+	}
+
+	.wedding_hp_text { 
+		font-size: 16px;
+		padding-left: 10px; 	 
+	}
+
+	.image_reserve { 
+		color: black; 
+		font-size: 16px;
+	}
+
+	#img_location1 { 
+		height: 350px; 
+		width: 400px; 
+	}
+	
+	#img_location2 { 
+		height: 350px; 
+		width: 400px; 
+	}
+
+	#rp_image1 { 
+		height: 300px; 
+		width: 400px; 
+		margin-left: 50px;  
+	}
+
+	#rp_image2 { 
+		height: 300px; 
+		width: 400px;  
+	}
+
+	.reserve_form { 
+		width: 600px; 
+	}
+
+	#wedding_page_img1 { 
+		height: 300px; 
+		width: 300px; 
+	}
+
+	#wedding_page_img2{ 
+		height: 300px; 
+		width: 300px; 
+	}
+
+	#wedding_page_img3 { 
+		height: 300px; 
+		width: 300px; 
+	}
+
+	.wedding_quote { 
+		font-size: 16px;
+	}
+
+	#location_img1 { 
+		margin-left: 50px;
+	}
+
+	#team_img1 { 
+		height:320px; 
+		width: 350px;
+		margin-left: 20px; 
+
+	}
+
+	#team_img2 { 
+		height: 320px; 
+		width: 350px; 
+	}
+
+	#team_img3 { 
+		height: 320px; 
+		width: 180px; 
+	}
+	
+	.team_quote { 
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	#team_why_p { 
+		margin-left: 100px; 
+		margin-right: 100Px; 
+	}
+}
+
+@media screen and (max-width: 920px){ 
+	#img_wedding1 { 
+		margin-top: 50px; 
+		height: 220px; 
+		width: 260px; 
+	}
+
+	#img_reserve { 
+		margin-top: 50px; 
+		margin-left: 10px;
+		height: 200px; 
+		width: 300px; 
+		
+	}
+
+	#rp_image1 { 
+		height: 250px; 
+		width: 350px; 
+		margin-left: 70px;  
+	}
+
+	#rp_image2 { 
+		height: 250px; 
+		width: 350px;  
+	}
+
+	#img_location1 { 
+		height: 320px; 
+		width: 370px; 
+	}
+	
+	#img_location2 { 
+		height: 320px; 
+		width: 370px; 
+	}
+
+	#wedding_page_img1 { 
+		height: 250px; 
+		width: 270px; 
+	}
+
+	#wedding_page_img2{ 
+		height: 250px; 
+		width: 270px; 
+	}
+
+	#wedding_page_img3 { 
+		height: 250px; 
+		width: 270px; 
+	}
+
+	.location_page_images { 
+		flex: 1 3 100%; 
+	}
+	
+	.table_container { 
+		flex: 1 3 100%; 
+		text-align: center;
+	}
+
+	.location_table { 
+		margin: 0 auto; 
+	}
+
+	iframe { 
+		margin-top: 40px;
+		width: 600px; 
+		height: 350px;  
+	}
+
+	#location_img1 { 
+		margin-left: 20px;
+	}
+
+	.location_table { 
+		width: 500px; 	
+	}
+
+	#team_img1 { 
+		height:300px; 
+		width: 320px;
+		margin-left: 20px; 
+	}
+
+	#team_img2 { 
+		height: 300px; 
+		width: 320px; 
+	}
+
+	#team_img3 { 
+		height: 300px; 
+		width: 180px; 
+	}
+
+	.team_quote { 
+		margin-right: 50px;
+		margin-left: 50px; 
+	}
+
+	#team_why_p { 
+		margin-left: 50px; 
+		margin-right: 50Px; 
+	}
+}
+
+@media screen and (max-width: 850px){ 
+	#img_food1 { 
+		width: 275px; 
+		height: 175px; 
+    }
+   
+	#img_food2 { 
+		width: 275px; 
+		height: 175px; 
+	}
+	
+	#img_food3 { 
+		width: 275px; 
+		height: 175px; 
+    }
+   
+	#img_food4 { 
+		width: 275px; 
+		height: 175px; 
+	}
+
+	#logo {
+		width:400px;
+		margin:auto;
+		padding-left:215px;
+	}
+	
+	.navbar ul { 
+		overflow: hidden; 
+		list-style-type: none;
+		padding-top: 50px;
+		padding-left: 50px; 
+		padding-bottom: 92px;
+		margin: 0px; 	
+	}	
+
+	video {  
+		width: 1280px; 
+		height: 720px; 
+	}
+
+	.index-grid-container { 
+		grid-template-rows: 330px 600px
+	}
+
+	.countdown { 
+		font-size: small;
+		line-height: 3em;
+	}
+
+	.wedding_hp_text { 
+		font-size: 13px;
+		padding-left: 8px;  
+	}
+
+	#img_location1 { 
+		height: 250px; 
+		width: 300px; 
+	}
+	
+	#img_location2 { 
+		height: 250px; 
+		width: 300px; 
+	}
+
+	.wedding_hp_text { 
+		font-size: 12px;
+		padding-left: 6px; 
+		color: black;	 
+	}
+
+	#rp_image1 { 
+		height: 250px; 
+		width: 320px; 
+		margin-left: 40px;  
+	}
+
+	#rp_image2 { 
+		height: 250px; 
+		width: 320px;  
+	}
+
+	.image_reserve { 
+		color: black; 
+		font-size: 14px;
+	}
+
+	#wedding_page_img1 { 
+		height: 220px; 
+		width: 240px; 
+	}
+
+	#wedding_page_img2{ 
+		height: 220px; 
+		width: 240px; 
+	}
+
+	#wedding_page_img3 { 
+		height: 220px; 
+		width: 240px; 
+	}
+
+	.wedding_form { 
+		width: 600px; 
+	}
+
+	.wedding_quote { 
+		font-size: 16px;
+		margin-left: 50px; 
+		margin-right: 50px; 
+	}
+
+	#location_img1 { 
+		height: 350px; 
+		width: 400px; 
+		margin-left: 40px;
+	}
+
+	#location_img2 { 
+		height: 350px; 
+		width: 250px; 
+	}
+
+	iframe { 
+		width: 550px;
+	}
+
+	#team_img1 { 
+		height:250px; 
+		width: 300px;
+		margin-left: 0px; 
+	}
+
+	#team_img2 { 
+		height: 250px; 
+		width: 300px; 
+	}
+
+	#team_img3 { 
+		height: 280px; 
+		width: 160px; 
+	}
+
+	.team_quote { 
+		margin-right: 10px;
+		margin-left: 10px; 
+	}
+
+	#team_why_p { 
+		margin-left: 10px; 
+		margin-right: 10Px; 
+	}
+}
+
+@media screen and (max-width: 750px){ 
+	#img_food1 { 
+		width: 250px; 
+		height: 175px; 
+    }
+   
+	#img_food2 { 
+		width: 250px; 
+		height: 175px; 
+	}
+	
+	#img_food3 { 
+		width: 250px; 
+		height: 175px; 
+    }
+   
+	#img_food4 { 
+		width: 250px; 
+		height: 175px; 
+	}
+	
+	.navbar ul { 
+		overflow: hidden; 
+		list-style-type: none;
+		padding-top: 50px;
+		padding-left: 20px; 
+		padding-bottom: 92px;
+		margin: 0px; 	
+	}
+	
+	#logo {
+		width:400px;
+		margin:auto;
+		padding-left:175px;
+	}
+
+	video {  
+		width: 960px; 
+		height: 550px; 
+	}
+
+	.index-grid-container { 
+		grid-template-rows: 330px 500px
+	}
+
+	#img_wedding1 { 
+		margin-top: 50px; 
+		height: 240px; 
+		width: 300px; 
+	}
+
+	#img_reserve { 
+		margin-top: 50px; 
+		height: 200px; 
+		width: 300px; 
+		
+	}
+
+	#img_location1 { 
+		height: 200px; 
+		width: 250px; 
+	}
+	
+	#img_location2 { 
+		height: 200px; 
+		width: 250px; 
+	}
+
+	#wedding_page_img1 { 
+		height: 200px; 
+		width: 220px; 
+	}
+
+	#wedding_page_img2{ 
+		height: 200px; 
+		width: 220px; 
+	}
+
+	#wedding_page_img3 { 
+		height: 200px; 
+		width: 220px; 
+	}
+
+	#rp_image1 { 
+		height: 300px; 
+		width: 600px; 
+		margin-left: 40px; 	 
+	}
+
+	#rp_image2 { 
+		height: 300px; 
+		width: 600px;
+		margin-left: 40px;   
+	}
+
+	#location_img1 { 
+		height: 300px; 
+		width: 370px; 
+		margin-left: 20px;
+	}
+
+	#location_img2 { 
+		height: 300px; 
+		width: 250px; 
+	}
+
+	iframe { 
+		width: 550px;
+	}
+
+	#team_img1 { 
+		height:230px; 
+		width: 250px; 
+
+	}
+
+	#team_img2 { 
+		height: 230px; 
+		width: 250px; 
+	}
+
+	#team_img3 { 
+		height: 230px; 
+		width: 140px; 
+	}
+
+}
+
+@media screen and (max-width: 650px){ 
+	#img_food1 { 
+		width: 200px; 
+		height: 150px; 
+    }
+    #img_food2 { 
+		width: 200px; 
+		height: 150px; 
+	}
+	
+	#img_food3 { 
+		width: 200px; 
+		height: 150px; 
+    }
+   
+	#img_food4 { 
+		width: 200px; 
+		height: 150px; 
+	}
+	
+	#logo {
+		width:400px;
+		margin:auto;
+		padding-left:100px;
+	}
+	
+	.image_container { 
+		margin-left: 85px;
+	}
+
+	video {  
+		width: 780px; 
+		height: 440px; 
+		min-height: none; 
+	}
+
+	.index-grid-container { 
+		grid-template-rows: 330px 400px
+	}
+
+	#img_wedding1 { 
+		margin-top: 50px; 
+		height: 200px; 
+		width: 250px; 
+	}
+
+	#img_reserve { 
+		margin-top: 50px; 
+		margin-left: 10px;
+		height: 200px; 
+		width: 230px; 
+		
+	}
+
+	.wedding_hp_text { 
+		font-size: 8px;
+		padding-left: 2px; 	
+	}
+
+	.image_reserve { 
+		color: black; 
+		font-size: 12px;
+	}
+
+	#img_location1 { 
+		height: 200px; 
+		width: 240px; 
+	}
+	
+	#img_location2 { 
+		height: 200px; 
+		width: 240px; 
+	}
+
+	.location_hp_text { 
+		padding-left: 10px; 
+		color: white; 
+		font-size: 14px;
+	}
+
+	.menu2::first-letter { 
+		float: left;
+		line-height: 25px;
+		font-size: 31px;
+		font-family: Montserrat;
+		color: green;
+		margin-bottom: -16px;
+	}
+
+	#wedding_page_img1 { 
+		height: 400px; 
+		width: 600px;
+	}
+
+	#wedding_page_img2{ 
+		height: 400px; 
+		width: 600px;
+	}
+
+	#wedding_page_img3 { 
+		height: 400px; 
+		width: 600px;
+	}
+
+	.wedding_form { 
+		width: 500px; 
+	}
+
+	#rp_image1 { 
+		height: 300px; 
+		width: 575px; 
+		margin-left: 0px; 
+		 
+	}
+
+	#rp_image2 { 
+		height: 300px; 
+		width: 575px;
+		margin-left: 0px;   
+	}
+
+	#location_img1 { 
+		height: 440px; 
+		width: 570px; 
+		margin-left: 0px;
+	}
+
+	#location_img2 { 
+		height: 650px; 
+		width: 570px; 
+	}
+
+	iframe { 
+		width: 350px;
+		height: 200px
+	}
+
+	#team_img1 { 
+		height:400px; 
+		width: 574px;
+		margin-left: 0px; 
+	}
+
+	#team_img2 { 
+		height: 400px; 
+		width: 574px; 
+	}
+
+	#team_img3 { 
+		height: 600px; 
+		width: 574px; 
+	}
+
+	.nav-links li:not(.dropdown_navicon) {
+        display: none; /* Hide regular nav links on small screens */
+    }
+
+    /* Show navicon */
+    .navicon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+	.dropdown_navicon { 
+		display: inline-block; 
+	}
+
+	.dropdown-content_navicon { 
+		display: none; 
+	}
+
+    
+    .navicon:hover + .dropdown-content_navicon,
+    .dropdown-content_navicon:hover {
+        display: block;
+    }
+
+}
+	

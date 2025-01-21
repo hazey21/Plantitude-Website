@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang = "en">
+
+	<head>
+		<!--
+   			Final project for Comp 2681 
+    
+   			Home Page for Plantitude 
+    		Author: Dylan Phillips 
+    		Date: Dec 18, 2023  
+
+    		Filename: index.html
+   		-->
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale= 1.0">
+		<meta name = "keywords" content = "Plant Based, Vegan, Ladysmith, Food, Restaurant, Wedding Catering" />
+		<title>Plantitude Home</title>
+		
+		<link href = "../css/plantitude_layout.css" rel = "stylesheet"/>
+		<link href = "../css/plantitude_base.css" rel = "stylesheet"/>
+		<script src = "../javascript/plantitude.js"></script>
+
+	</head>
+
+	<body onload = "startTime()">
+		<div class = "index-grid-container">
+			<div class = "header-container">	
+				<header class = "header">
+					<a href = "../html/index.html">
+						<img id = "logo" src = "../images/plantitude_logo copy.png" alt = "Plantitude Logo"/>
+					</a>
+					<nav class = "navbar">
+						<ul class = "nav-links">
+							<li><a href = "../html/index.html">Home</a></li>
+							<li class = "dropdown">
+								<button class = "dropbtn">Menu's</button>
+								<div class = "dropdown-content">
+								  <a href = "../html/pl_menu.html">Brunch Menu</a>
+								  <a href = "../html/pl_menu_dinner.html">Dinner Menu</a>
+								</div>
+								<li class = "dropdown_navicon">
+									<button class = "dropbtn_navicon">
+										<img src = "../images/navicon.png" alt = "Menu" class = "navicon">
+									</button>
+									<div class = "dropdown-content_navicon">
+										<a href = "../html/index.html">Home</a>
+										<a href = "../html/pl_menu.html">Brunch Menu</a>
+										<a href = "../html/pl_menu_dinner.html">Dinner Menu</a>
+										<a href = "../html/pl_res_takeout.html">Reservation/Takeout</a>
+										<a href = "../html/pl_wedcat.html">Wedding Catering</a>
+										<a href = "../html/pl_contact.html">Contact</a>
+										<a href = "../html/pl_location.html">Location</a>
+										<a href = "../html/pl_jointeam.html">Join The Team</a>
+										<a href = "../html/references.html">Cross Reference page</a>
+									</div>
+								</li>
+							</li>
+							<li><a href = "../html/pl_res_takeout.html">Reservation/Takeout</a></li>
+							<li><a href = "../html/pl_wedcat.html">Wedding Catering</a></li>
+							<li><a href = "../html/pl_contact.html">Contact</a></li>
+							<li><a href = "../html/pl_location.html">Location</a></li>
+							<li><a href = "../html/pl_jointeam.html">Join The Team</a></li>
+							<li><a href = "../html/references.html">Cross Reference page</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+
+			<div class = "video-container">
+				<video autoplay muted loop> 
+					<source src = "../videos/mixkit-chef-preparing-salad-in-the-restaurant-kitchen-13258-medium.mp4" type = "video/mp4"/>
+				</video>
+			</div>
+
+			<div class = "food-container">
+				<div class = "countdown">
+					<h1>COUNTDOWN TO JULY 1st BBQ PARTY @4:00PM</h1> 
+					<h1 id = "countdown-timer"></h1>
+				</div>	 
+				<div class="image_container">
+					  <img id = "img_food1" src="../images/plantitude_food1.jpeg" alt = "food image 1"/>
+					  <img id = "img_food2" src="../images/plantitude_food2.jpeg" alt = "food image 2"/>
+					  <img id = "img_food3" src="../images/plantitude_food3.jpeg" alt = "food image 3"/>
+					  <img id = "img_food4" src="../images/plantitude_food4.jpeg" alt = "food image 4"/>
+				</div>
+				<div class = "menu_homepage_link"> 
+					<h3>Take a look at our tempting Menu Items</h3>
+					<a class = "menu_hp_link" href = "../html/pl_menu.html">View Menu</a>
+				</div>
+			</div>
+
+			<div class = "reserve-container">
+				<div class = "image_reserve"> 
+					<img id = "img_reserve" src = "../images/plantitude_resturant_front.jpeg" alt = "restaurant storefront"/>
+					<h3>See how you can Reserve a table</h3>
+					<a href = "../html/pl_res_takeout.html" title = "reserve">Reserve Now</a>
+				</div>
+			</div>
+
+			<div class = "wedding-container"> 
+				<div class = "image_wedding"> 
+					<img id = "img_wedding1" src = "../images/plantitude_wedding_img1.jpeg" alt = "wedding image"/>
+					<div class = "wedding_hp_text">
+						<h3>Visit our wedding page for more information</h3>
+						<a href = "../html/pl_wedcat.html" title = "wedding">Wedding/Catering</a>
+					</div>
+				</div>
+			</div>
+
+			<div class = "location-container"> 
+				<div class = "location_images"> 
+					<img id = "img_location1" src = "../images/plantitude_location1.jpeg" alt = "storefront" height = 400px width = 500px/>
+					<img id = "img_location2" src = "../images/ladysmith1.avif" alt = "Ladysmith" height = 400px width = 500px/>
+					<div class = "location_hp_text"> 
+						<h4>Located right in the heart of downtown Ladysmith</h4>
+						<a class = "location_hp_link" href = "../html/pl_location.html">Location</a>
+					</div>
+				</div>
+			</div>
+			<footer class="footer-container">
+				<div class="footer_content">
+					<div class="footer_info">
+						<h4>Plantitude</h4>
+						<p>431 1st Ave, Ladysmith, BC &#128309; V9G 1A1
+							Phone: 250-924-1201 &#9742;</p>
+					</div>
+					<div class="footer_nav">
+						<a href="../html/pl_menu.html">Menu</a></li>
+						<a href="../html/pl_res_takeout.html">Reservation/Takeout</a></li>
+						<a href="../html/pl_wedcat.html">Wedding Catering</a></li>
+						<a href="../html/pl_contact.html">Contact</a></li>
+						<a href="../html/pl_location.html">Location</a></li>
+						<a href="../html/pl_jointeam.html">Join The Team</a></li>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<p>&copy; 2023 Plantitude. All rights reserved.</p>
+					<p>Last updated: <span id="lastUpdated"></span></p>
+					<div id="clock"></span>
+				</div>
+				<script>
+					let text = document.lastModified;
+					document.getElementById("lastUpdated").innerHTML = text;
+				</script>
+			</footer>	
+		</div>
+	</body>
+</html>

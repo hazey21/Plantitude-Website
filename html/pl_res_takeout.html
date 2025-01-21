@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang = "en">
+
+	<head>
+		<!--
+   			Final project for Comp 2681 
+    
+    		Reservations and Takeout page for Plantitude 
+    		Author: Dylan Phillips 
+    		Date: Dec 18, 2023  
+
+    		Filename: pl_res_takeout.html
+   		-->
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale= 1.0">
+		<meta name = "keywords" content = "Plant Based, Vegan, Ladysmith, Food, Restaurant, Wedding Catering"/>
+		<title>Plantitude Reservations/Takeout</title>
+
+		<link href = "../css/plantitude_layout.css" rel = "stylesheet"/>
+		<link href = "../css/plantitude_base.css" rel = "stylesheet"/>
+		<script src = "../javascript/plantitude.js"></script>
+		
+        
+	</head>
+
+	<body>
+		<div class = "wrapper">
+			<div class = "flex_header">
+				<header class = "header">
+					<a href = "../html/index.html">
+						<img id = "logo" src = "../images/plantitude_logo copy.png" alt = "Plantitude Logo"/>
+					</a>
+					<nav class = "navbar">
+						<ul class = "nav-links">
+							<li><a href = "../html/index.html">Home</a></li>
+							<li class = "dropdown">
+								<button class = "dropbtn">Menu's</button>
+								<div class = "dropdown-content">
+								  <a href = "../html/pl_menu.html">Brunch Menu</a>
+								  <a href = "../html/pl_menu_dinner.html">Dinner Menu</a>
+								</div>
+								<li class = "dropdown_navicon">
+									<button class = "dropbtn_navicon">
+										<img src = "../images/navicon.png" alt = "Menu" class = "navicon">
+									</button>
+									<div class = "dropdown-content_navicon">
+										<a href = "../html/index.html">Home</a>
+										<a href = "../html/pl_menu.html">Brunch Menu</a>
+										<a href = "../html/pl_menu_dinner.html">Dinner Menu</a>
+										<a href = "../html/pl_res_takeout.html">Reservation/Takeout</a>
+										<a href = "../html/pl_wedcat.html">Wedding Catering</a>
+										<a href = "../html/pl_contact.html">Contact</a>
+										<a href = "../html/pl_location.html">Location</a>
+										<a href = "../html/pl_jointeam.html">Join The Team</a>
+									</div>
+								</li>
+							</li>
+							<li><a href = "../html/pl_res_takeout.html">Reservation/Takeout</a></li>
+							<li><a href = "../html/pl_wedcat.html">Wedding Catering</a></li>
+							<li><a href = "../html/pl_contact.html">Contact</a></li>
+							<li><a href = "../html/pl_location.html">Location</a></li>
+							<li><a href = "../html/pl_jointeam.html">Join The Team</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+
+			<div class = "reserve_page_heading"> 
+				<h1>Reserve Now</h1>
+				<blockquote id = "reserve_page_subheading">In either our beautiful outdoor seating or dinning room</blockquote>
+			</div>
+			<div class = "reserve_page_img"> 
+				<img id = "rp_image1" src = "../images/plantitude_dining_bubbles.jpeg" alt = "dinning bubbles" height = 400px width = 500px;/>
+				<img id = "rp_image2" src = "../images/plantitude_resturant_reserve.jpeg" alt = "Reserve table" height = 400px width = 500px/>
+			</div>
+			<!-- Container for form -->
+			<div class = "reserve_form">
+				<form id = "c_reserve" action = "http://www.plantitude.com/reservation/process.cgi" method = "post" onsubmit = "return validateForm()">
+					
+					<!-- Reservation form -->
+					<fieldset id = "reserve_info"> 
+						<legend><h1>Reservation Information</h1></legend>
+						<div class = "reserve_cust"> 
+							<label for = "fName">First Name *</label>
+							<input name = "fName" id = "fName" type = "text">
+						</div>
+						<div class = "reserve_cust"> 
+							<label for = "lName">Last Name *</label>
+							<input name = "lName" id = "lName" type = "text"> 
+						</div>
+						<div class = "reserve_cust"> 
+							<label for = "email">E-Mail *</label>
+							<input name = "email" id = "email" type = "text" placeholder = "bob@gmail.com"/>
+						</div>
+						<div class = "reserve_cust"> 
+							<label for = "dateTime">Choose your date and time*</label>
+							<input name = "dateTime" id = "dateTime" type = "datetime-local" value = "2024-02-15T4:00" min = "2024-02-15T16:00" max = "2025-01-01T20:00"/>
+						</div>
+						<h6>* Required Information</h6>
+					</fieldset>
+					
+					<!--Comments or special requests-->
+					<div class = "add_info">
+						<label for = "comments" id = "comments">Comments or Special Requests</label>
+						<textarea name = "cust_comments" id = "comments">
+						</textarea>
+						<!--buttons for send and cancel comments-->
+						<div class = "reserve_buttons"> 
+							<input value = "Send" type = "submit"/>
+							<input value = "Cancel" type = "reset"/>
+						</div>
+					</div>
+				</form> 
+			</div>
+		</div>
+		<footer>
+			<div class="footer_content">
+				<div class="footer_info">
+					<h4>Plantitude</h4>
+					<p>431 1st Ave, Ladysmith, BC &#128309; V9G 1A1
+					Phone: 250-924-1201 &#9742;</p>
+				</div>
+				<div class="footer_nav">
+					<a href="../html/pl_menu.html">Menu</a></li>
+					<a href="../html/pl_res_takeout.html">Reservation/Takeout</a></li>
+					<a href="../html/pl_wedcat.html">Wedding Catering</a></li>
+					<a href="../html/pl_contact.html">Contact</a></li>
+					<a href="../html/pl_location.html">Location</a></li>
+					<a href="../html/pl_jointeam.html">Join The Team</a></li>
+					
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<p>&copy; 2023 Plantitude. All rights reserved.</p>
+			</div>
+		</footer>
+
+	</body>
+</html>
